@@ -1,1 +1,37 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level></diagram>
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>460</x><y>50</y><w>140</w><h>140</h></coordinates><panel_attributes>Fordon
+--
+fabrikat:str
+color:str
+--
+_init_constructor
+set_fabrikat(str)
+get_fabrikat():str
+set_color(str)
+get_color():str</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>270</y><w>270</w><h>140</h></coordinates><panel_attributes>Personbil
+--
+fabrikat:str
+color:str
+bagagevolym:int
+--
+_init_constructor(fabrikat, color, bagagevolym)
+set_bagagevolym(int)
+get_bagavolym():int
+print_fordon()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>50</y><w>260</w><h>140</h></coordinates><panel_attributes>Lastbil
+--
+fabrikat:str
+color:str
+flakvolym:int
+--
+_init_constructor(fabrikat, color, flakvolym)
+set_flakvolym(int)
+get_flakvolym():int
+print_fordon()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>180</y><w>60</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>40;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>120</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>220</y><w>200</w><h>190</h></coordinates><panel_attributes>main.py
+--
+looping:boolean
+personbils_lista[Personbil]
+lastbils_lista[Lastbil]
+--
+main()
+print_fordons_lista()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>180</y><w>60</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;10;30;40</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>320</y><w>60</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>40;20;10;10</additional_attributes></element></diagram>
